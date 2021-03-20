@@ -12,7 +12,19 @@ body { width: 100%; height: 100%; font-size: 16; }
 
 .top-page .layout-menu .menu-options { width: 400px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
 
-.top-page .layout-menu .menu-options button { outline: 0; border: none; background: none; cursor: pointer; color: white; }
+.top-page .layout-menu .menu-options ul { width: 700px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; list-style: none; }
+
+.top-page .layout-menu .menu-options ul li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.top-page .layout-menu .menu-options ul li .dropdown { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
+
+.top-page .layout-menu .menu-options ul li .dropdown img { margin-left: 16px; }
+
+.top-page .layout-menu .menu-options ul li a { text-decoration: none; color: white; font-weight: 600; }
+
+.top-page .layout-menu .menu-options ul li .drop-menu { width: 130px; height: 150px; background-color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; padding: 16px; position: absolute; top: 80px; border-radius: 8px; }
+
+.top-page .layout-menu .menu-options ul li .drop-menu a { color: black; font-weight: 500; }
 
 .top-page .layout-menu .login { width: 80%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; }
 
