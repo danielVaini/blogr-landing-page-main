@@ -1,16 +1,21 @@
+// Div top-pag
+
 .top-page {
   width: 100%;
   height: 400px;
-  
-  display: flex;
-  justify-content: center;
 
-  background:url("../../images/bg-pattern-intro.svg")  right no-repeat
-  , linear-gradient( left,hsl(13, 100%, 72%), hsl(353, 100%, 62%)); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: url("../../images/bg-pattern-intro.svg") right no-repeat,
+    linear-gradient(left, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
   background-size: 2800px, 100%;
   background-position-x: 30%, 0;
 
   border-bottom-left-radius: 80px;
+
+  // Div .layout-menu
 
   .layout-menu {
     width: 100%;
@@ -33,7 +38,7 @@
       justify-content: space-evenly;
 
       margin-left: 40px;
-      
+
       ul {
         width: 700px;
         display: flex;
@@ -42,7 +47,6 @@
         list-style: none;
 
         li {
-       
           display: flex;
           flex-direction: column;
           .dropdown {
@@ -50,7 +54,7 @@
             background: none;
             border: none;
             outline: none;
-            
+
             display: flex;
             align-items: center;
             justify-content: center;
@@ -59,14 +63,14 @@
             font-weight: 600;
 
             cursor: pointer;
-           
+
             img {
               margin-left: 16px;
             }
           }
 
           a {
-            text-decoration : none;
+            text-decoration: none;
             color: white;
             font-weight: 600;
           }
@@ -94,50 +98,97 @@
               color: black;
               font-weight: 500;
             }
-            
-
-            
           }
-
         }
-        
       }
-
     }
 
     .login {
-     width: 80%;
-     display: flex;
-     align-items: center;
-     justify-content: flex-end;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
 
-     a {
-       text-decoration: none;
+      a {
+        text-decoration: none;
 
-       color: white;
-       margin-right: 24px;
+        color: white;
+        margin-right: 24px;
 
-       cursor: pointer;
-     }
+        cursor: pointer;
+      }
 
-     button {
-       appearance: none;
-       outline: none;
-       border: none;
-       background: none;
+      button {
+        appearance: none;
+        outline: none;
+        border: none;
+        background: none;
 
-       width: 100px;
-       height: 40px;
+        width: 100px;
+        height: 40px;
 
-       background-color: white;
+        background-color: white;
 
-       color: hsl(353, 100%, 62%);
+        color: hsl(353, 100%, 62%);
 
-       border-radius: 16px;
+        border-radius: 16px;
 
-       font-weight: 700;
-     }
+        font-weight: 700;
+      }
     }
   }
 
+  // Div .title-main
+  .title-main {
+    width: 100%;
+    height: 200px;
+
+    margin-top: 48px;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      opacity: 0.8;
+    }
+
+    .btn-main {
+      width: 300px;
+      display: flex;
+
+      align-items: center;
+      justify-content: space-around;
+
+      button {
+        width: 100px;
+        height: 40px;
+
+        border-radius: 16px;
+
+        outline: none;
+        border: none;
+        &:first-child {
+          background-color: white;
+          color: hsl(353, 100%, 62%);
+          font-weight: 700;
+        }
+
+        &:last-child {
+          background-color: rgba(black, 0.0);
+          border: 1px solid white;
+
+          color: white;
+          font-weight: 700;
+        }
+      }
+    }
+  }
 }
