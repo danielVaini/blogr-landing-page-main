@@ -4,7 +4,7 @@ body { width: 100%; height: 100%; font-size: 16; }
 
 .container { width: 100%; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: url("../../images/bg-pattern-intro.svg"); }
 
-.top-page { width: 100%; height: 400px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background: url("../../images/bg-pattern-intro.svg") right no-repeat, -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54)); background: url("../../images/bg-pattern-intro.svg") right no-repeat, linear-gradient(left, #ff8f70, #ff3d54); background-size: 2800px, 100%; background-position-x: 30%, 0; border-bottom-left-radius: 80px; }
+.top-page { width: 100%; height: 400px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; background: url("../../images/bg-pattern-intro.svg") right no-repeat, -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54)); background: url("../../images/bg-pattern-intro.svg") right no-repeat, linear-gradient(left, #ff8f70, #ff3d54); background-size: 2800px, 100%; background-position-x: 30%, 0; border-bottom-left-radius: 80px; }
 
 .top-page .layout-menu { width: 100%; max-width: 1280px; height: 80px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0px 40px; }
 
@@ -31,4 +31,18 @@ body { width: 100%; height: 100%; font-size: 16; }
 .top-page .layout-menu .login a { text-decoration: none; color: white; margin-right: 24px; cursor: pointer; }
 
 .top-page .layout-menu .login button { -webkit-appearance: none; -moz-appearance: none; appearance: none; outline: none; border: none; background: none; width: 100px; height: 40px; background-color: white; color: #ff3d54; border-radius: 16px; font-weight: 700; }
+
+.top-page .title-main { width: 100%; height: 200px; margin-top: 48px; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; }
+
+.top-page .title-main h1 { font-size: 40px; }
+
+.top-page .title-main p { opacity: 0.8; }
+
+.top-page .title-main .btn-main { width: 300px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; }
+
+.top-page .title-main .btn-main button { width: 100px; height: 40px; border-radius: 16px; outline: none; border: none; }
+
+.top-page .title-main .btn-main button:first-child { background-color: white; color: #ff3d54; font-weight: 700; }
+
+.top-page .title-main .btn-main button:last-child { background-color: rgba(0, 0, 0, 0); border: 1px solid white; color: white; font-weight: 700; }
 /*# sourceMappingURL=main.css.map */
