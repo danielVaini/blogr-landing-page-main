@@ -18,14 +18,27 @@
   background-position-y: -500px;  
 
   .infra-container {
-    width: 80%;
+    width: 100%;
     max-width: 1280px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 
     .infra-about {
+      width: 410px;
+      height: 200px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
       color: white;
+
+      line-height: 25px;
+      letter-spacing: 2px;
+      margin-left: 80px;
+
+      text-align: left;
     }
   }
 }
