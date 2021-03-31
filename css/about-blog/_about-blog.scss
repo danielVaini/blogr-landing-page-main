@@ -1,0 +1,38 @@
+.about-blog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-top: 40px;
+
+  .container-about-blog {
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-left: -580px;
+    }
+
+    .description-about-blog {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      div {
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        line-height: 25px;
+      }
+    }
+  }
+
+}
