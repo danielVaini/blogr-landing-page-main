@@ -1,0 +1,31 @@
+.infrastructure {
+  width: 100%;
+  height: 400px;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  border-bottom-left-radius: 104px;
+  border-top-right-radius: 104px;
+
+  margin-top: 40px;
+
+  background:  url("/images/bg-pattern-circles.svg") center left no-repeat, black;
+  background-position-x: -200px;  
+  background-position-y: -500px;  
+
+  .infra-container {
+    width: 80%;
+    max-width: 1280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .infra-about {
+      color: white;
+    }
+  }
+}
