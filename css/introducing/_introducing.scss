@@ -2,13 +2,16 @@
   width: 100%;
   height: 900px;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   
+  // background: url("/images/illustration-editor-desktop.svg") no-repeat center right;
+  // background-position-x: 800px;
+  // background-position-y: 5px;
   
-  background: url("/images/illustration-editor-desktop.svg") no-repeat center right;
-  background-position-x: 800px;
-  background-position-y: 5px;
-  
-  
+  overflow: hidden;
   
   h2 {
     width: 100%;
@@ -23,15 +26,16 @@
   .content {
     width: 80%;
     max-width: 1280px;
-    margin: auto;
-    display: flex;
     
-   
+    display: flex;
+    align-items: center;
+
+    margin-top: -96px;
 
     .description {
       width: 500px;
       height: 400px;
-      margin-top: 100px;
+     
 
       display: flex;
       flex-direction: column;
@@ -54,7 +58,9 @@
       } 
     }
 
-  
+    img {
+      margin-left: 200px;
+    }
 
     
   }
