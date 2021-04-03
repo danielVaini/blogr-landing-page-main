@@ -106,5 +106,15 @@ body { width: 100%; height: 100%; font-size: 16px; }
 
 .bottom-page footer { width: 100%; max-width: 1280px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; margin-bottom: 80px; }
 
-.bottom-page footer .menu-bottom { color: white; }
+.bottom-page footer img { height: 40px; }
+
+.bottom-page footer .menu-bottom { height: 100px; color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; margin-top: 40px; }
+
+.bottom-page footer .menu-bottom p { height: 16px; margin-bottom: 32px; }
+
+.bottom-page footer .menu-bottom ul a { text-decoration: none; }
+
+.bottom-page footer .menu-bottom ul a li { margin-bottom: 24px; height: 16px; list-style: none; color: white; }
+
+.bottom-page footer .menu-bottom ul a li:hover { text-decoration: underline; }
 /*# sourceMappingURL=main.css.map */
