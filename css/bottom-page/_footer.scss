@@ -66,4 +66,27 @@
     } 
   
   }
+
+  .attribution {
+    
+    height: 40px;
+    margin-top: 40px;
+    position: relative;
+    bottom: 0;
+    color: white;
+    a {
+      text-decoration: none;
+
+      color: white;
+
+      &:first-child {
+        font-weight: 300;
+        opacity: 0.4;
+      }
+      &:last-child {
+        font-weight: 700;
+        text-decoration: underline;
+      }
+    }
+  }
 }
