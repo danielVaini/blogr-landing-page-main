@@ -22,6 +22,16 @@ body { width: 100%; height: 100%; font-size: 16px; }
 
 .top-page .layout-menu .menu-options ul li .dropdown img { margin-left: 16px; }
 
+.top-page .layout-menu .menu-options ul li .dropdown .rotateAnimation { -webkit-animation: rotate 1s infinite; animation: rotate 1s infinite; }
+
+.top-page .layout-menu .menu-options ul li .dropdown .rotate { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+
+@-webkit-keyframes rotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
+
+@keyframes rotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(180deg); transform: rotate(180deg); } }
+
 .top-page .layout-menu .menu-options ul li a { text-decoration: none; color: white; font-weight: 600; }
 
 .top-page .layout-menu .menu-options ul li .drop-menu { width: 130px; height: 150px; background-color: white; display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; padding: 16px; position: absolute; top: 80px; border-radius: 8px; }
