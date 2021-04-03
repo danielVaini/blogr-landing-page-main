@@ -1,5 +1,6 @@
 const dropdown = document.querySelectorAll('.dropdown');
 const dropmenu = document.querySelectorAll('.drop-menu');
+const iconArrow = document.querySelectorAll('.icon-arrow'); 
 
 dropdown.forEach(item => {
   item.addEventListener('click', () => {
@@ -8,19 +9,31 @@ dropdown.forEach(item => {
         dropmenu[0].style.display = 'flex'
         dropmenu[1].style.display = 'none'
         dropmenu[2].style.display = 'none'
+        // Animation img
+        iconArrow[0].classList.add('rotate')
+        iconArrow[1].classList.remove('rotate')
+        iconArrow[2].classList.remove('rotate')
+        
       }else {
         dropmenu[0].style.display = 'none'
-
+        iconArrow[0].classList.remove('rotate')
+          
+          
+        }
       }
-    }
-    if(dropdown[1] === item) {
-      if(dropmenu[1].style.display === 'none'){
-        dropmenu[1].style.display = 'flex'
-        dropmenu[0].style.display = 'none'
-        dropmenu[2].style.display = 'none'
+      if(dropdown[1] === item) {
+        if(dropmenu[1].style.display === 'none'){
+          dropmenu[1].style.display = 'flex'
+          dropmenu[0].style.display = 'none'
+          dropmenu[2].style.display = 'none'
+           // Animation img
+        iconArrow[0].classList.remove('rotate')
+        iconArrow[2].classList.remove('rotate')
+        iconArrow[1].classList.add('rotate')
       }else {
         dropmenu[1].style.display = 'none'
-
+        iconArrow[1].classList.remove('rotate')
+        
       }
     }
     if(dropdown[2] === item) {
@@ -28,10 +41,19 @@ dropdown.forEach(item => {
         dropmenu[2].style.display = 'flex'
         dropmenu[0].style.display = 'none'
         dropmenu[1].style.display = 'none'
+        
+        iconArrow[0].classList.remove('rotate')
+        iconArrow[1].classList.remove('rotate')
+        iconArrow[2].classList.add('rotate')
       }else {
         dropmenu[2].style.display = 'none'
-
+        iconArrow[2].classList.remove('rotate')
+          
+        }
       }
-    }
+    })
   })
-})
+  
+  const addAnime = () => {
+    iconArrow[0].classList.remove('rotateAnimation')
+  }
