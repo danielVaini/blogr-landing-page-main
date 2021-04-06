@@ -1,4 +1,4 @@
-* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; height: 100%; }
+* { padding: 0; margin: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { width: 100%; height: 100%; font-size: 16px; }
 
@@ -8,7 +8,7 @@ body { width: 100%; height: 100%; font-size: 16px; }
 
 .top-page .layout-menu { width: 100%; max-width: 1280px; height: 80px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 0px 40px; }
 
-.top-page .layout-menu img { height: 8px; margin-right: 16px; }
+.top-page .layout-menu img { margin-right: 16px; }
 
 .top-page .layout-menu .logo { height: 40px; }
 
@@ -128,7 +128,7 @@ body { width: 100%; height: 100%; font-size: 16px; }
 
 .btn-mobile { outline: none; border: none; background-color: transparent; height: 60px; width: 60px; display: none; }
 
-.btn-mobile img { width: 40px; height: 30px !important; }
+.btn-mobile img { width: 40px; height: 20px; }
 
 .menu-mobile { display: none; }
 
@@ -136,10 +136,10 @@ body { width: 100%; height: 100%; font-size: 16px; }
   .container .top-page .layout-menu .menu-options { display: none; }
   .container .top-page .layout-menu .login { display: none; }
   .container .top-page .layout-menu .btn-mobile { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 24px; }
-  .container .top-page .layout-menu .menu-mobile { display: -webkit-box; display: -ms-flexbox; display: flex; position: absolute; top: 100px; right: 25%; z-index: 10; background-color: white; }
+  .container .top-page .layout-menu .menu-mobile { height: 400px; width: 350px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding: 24px; z-index: 2; margin-top: 460px; background-color: white; border-radius: 16px; }
   .container .top-page .layout-menu .menu-mobile ul { width: 350px; height: 300px; }
   .container .top-page .layout-menu .menu-mobile ul li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .container .top-page .layout-menu .menu-mobile ul li button { width: 100%; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: transparent; outline: none; border: none; }
-  .container .top-page .layout-menu .menu-mobile ul li button img { margin: 0; }
-  .container .top-page .layout-menu .menu-mobile ul li .mobile-drop { width: 80%; height: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 16px; background-color: grey; display: none; } }
+  .container .top-page .layout-menu .menu-mobile ul li button { width: 100%; height: 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; background-color: transparent; outline: none; border: none; margin-bottom: 16px; font-weight: 700; }
+  .container .top-page .layout-menu .menu-mobile ul li button img { width: 10px; height: 8px; margin-left: 8px; }
+  .container .top-page .layout-menu .menu-mobile ul li .mobile-drop { width: 80%; height: auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 16px; background-color: grey; display: none; } }
 /*# sourceMappingURL=main.css.map */
