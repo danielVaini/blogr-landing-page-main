@@ -54,6 +54,16 @@ dropdown.forEach(item => {
     })
   })
   
-  const addAnime = () => {
-    iconArrow[0].classList.remove('rotateAnimation')
-  }
+
+  // Mobile menu
+
+  const btnsDrop = document.querySelectorAll('.btn-mobile');
+  const dropDiv = document.querySelectorAll('.mobile-drop')
+
+  btnsDrop.forEach((item) => {
+    item.addEventListener('click', () => {
+      if(item[0] == btnsDrop[0]){
+        dropDiv[0].style.display = 'flex';
+      }
+    })
+  })
