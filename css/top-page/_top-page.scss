@@ -1,3 +1,5 @@
+@import '../colors';
+
 // Div top-pag
 
 .top-page {
@@ -9,7 +11,7 @@
   align-items: center;
 
   background: url("../../images/bg-pattern-intro.svg") right no-repeat,
-    linear-gradient(left, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    linear-gradient(left, $very-light-red, $ligh-red);
   background-size: 2800px, 100%;
   background-position-x: 30%, 0;
   background-repeat: no-repeat, no-repeat;
@@ -70,7 +72,7 @@
             align-items: center;
             justify-content: center;
             
-            color: white;
+            color: $text-white;
             font-weight: 600;
             
             cursor: pointer;
@@ -83,28 +85,17 @@
               margin-left: 16px;
             }
 
-            .rotateAnimation {
-              animation: rotate 1s infinite ;
-            }
+         
 
             .rotate {
               transform: rotate(180deg);
             }
 
-
-
-            @keyframes rotate {
-              0% {transform: rotate(0deg);}
-              // 25% {transform: rotate(22.5deg);}
-              // 50% {transform: rotate(45deg);}
-              // 75% {transform: rotate(45deg);}
-              100% {transform: rotate(180deg);}
-            }
           }
 
           a {
             text-decoration: none;
-            color: white;
+            color: $text-white;
             font-weight: 600;
 
 
@@ -115,7 +106,7 @@
             width: 130px;
             height: 150px;
 
-            background-color: white;
+            background-color: $text-white;
 
             display: none;
             flex-direction: column;
