@@ -57,13 +57,23 @@ dropdown.forEach(item => {
 
   // Mobile menu
 
-  const btnsDrop = document.querySelectorAll('.btn-mobile');
+  const btnsDrop = document.querySelectorAll('.btn-mobile-drop');
   const dropDiv = document.querySelectorAll('.mobile-drop')
 
-  btnsDrop.forEach((item) => {
+  btnsDrop.forEach(item => {
     item.addEventListener('click', () => {
-      if(item[0] == btnsDrop[0]){
-        dropDiv[0].style.display = 'flex';
+     if(btnsDrop[0] === item){
+       dropDiv[0].style.display = 'flex';
+       dropDiv[1].style.display = 'none';
+       dropDiv[2].style.display = 'none';
+      }else if(btnsDrop[1] === item){
+        dropDiv[0].style.display = 'none';
+        dropDiv[1].style.display = 'flex';
+        dropDiv[2].style.display = 'none';
+      }else if(btnsDrop[2] === item){
+      dropDiv[0].style.display = 'none';
+      dropDiv[1].style.display = 'none';
+      dropDiv[2].style.display = 'flex';
       }
     })
   })
