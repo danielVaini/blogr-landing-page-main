@@ -77,3 +77,16 @@ dropdown.forEach(item => {
       }
     })
   })
+
+  const btnDropMenu = document.querySelector('.btn-mobile');
+  const layoutMenuMobile = document.querySelector('.menu-mobile');
+  btnDropMenu.addEventListener('click', () => {
+    if(layoutMenuMobile.style.display == 'none'){
+      layoutMenuMobile.style.display = 'flex';
+      layoutMenuMobile.style.opacity = '1'
+    }else {
+      layoutMenuMobile.style.display = 'none';
+      layoutMenuMobile.style.opacity = '0'
+
+    }
+  })
