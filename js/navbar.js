@@ -63,17 +63,37 @@ dropdown.forEach(item => {
   btnsDrop.forEach(item => {
     item.addEventListener('click', () => {
      if(btnsDrop[0] === item){
-       dropDiv[0].style.display = 'flex';
-       dropDiv[1].style.display = 'none';
-       dropDiv[2].style.display = 'none';
-      }else if(btnsDrop[1] === item){
-        dropDiv[0].style.display = 'none';
-        dropDiv[1].style.display = 'flex';
-        dropDiv[2].style.display = 'none';
-      }else if(btnsDrop[2] === item){
-      dropDiv[0].style.display = 'none';
-      dropDiv[1].style.display = 'none';
-      dropDiv[2].style.display = 'flex';
+       if(dropDiv[0].style.display == 'none'){
+         dropDiv[0].style.display = 'flex';
+         dropDiv[1].style.display = 'none';
+         dropDiv[2].style.display = 'none';
+        }else {
+          dropDiv[0].style.display = 'none';
+
+      }
+    }
+      
+      if(btnsDrop[1] === item){
+        if(dropDiv[1].style.display == 'none'){
+
+          dropDiv[0].style.display = 'none';
+          dropDiv[1].style.display = 'flex';
+          dropDiv[2].style.display = 'none';
+        }else {
+          dropDiv[1].style.display = 'none';
+          
+        }
+      }
+      if(btnsDrop[2] === item){
+        if(dropDiv[2].style.display == 'none'){
+
+          dropDiv[0].style.display = 'none';
+          dropDiv[1].style.display = 'none';
+          dropDiv[2].style.display = 'flex';
+        }else {
+          dropDiv[2].style.display = 'none';
+          
+        }
       }
     })
   })
