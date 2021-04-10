@@ -102,14 +102,20 @@ dropdown.forEach(item => {
 
   const btnDropMenu = document.querySelector('.btn-mobile');
   const layoutMenuMobile = document.querySelector('.menu-mobile');
+  const imgOpen = document.querySelector('.img-open');
+  const imgClose = document.querySelector('.img-close');
   btnDropMenu.addEventListener('click', () => {
     if(layoutMenuMobile.style.display == 'none'){
       layoutMenuMobile.style.display = 'flex';
       layoutMenuMobile.style.opacity = '1';
-     
+      imgOpen.style.display = 'none';
+      imgClose.style.display = 'block';
+      
     }else {
       layoutMenuMobile.style.display = 'none';
       layoutMenuMobile.style.opacity = '0'
+      imgOpen.style.display = 'block';
+      imgClose.style.display = 'none';
 
     }
   })
